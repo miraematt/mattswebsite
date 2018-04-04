@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.header {
+  background-color: #32627d;
+  text-align: center;
+  color: #fff;
+}
+
+.header .main {
+  font-size: 30px;
+  background-color: #e22966;
+}
+
+.jumbotron {
+  background: url("../img/Bacon.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+ }
+
+.jumbotron h1 {
+   color: #e22966;
+   font-weight: 700;
+}
+
+.supporting {
+  text-align: center;
+}
+
+.supporting p {
+  font-size: 14px;
+  font-family: Open Sans;
+}
+
+.btn {
+  border: 1px solid;
+  border-radius: 1px;
+  color: #32627d;
+  padding: 10px 80px;
+  text-transform: uppercase;
+  margin: 20px auto 60px;
+} 
+
+.footer {
+  background-color: #e52364;
+  color: #fff;
+}
+
+.footer p {
+  padding-top: 32px;
+  width: 50%;
+  display: inline-block;
+}
+
+.footer nav {
+	width: 50%;
+	float: right;
+}
+
+.footer li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 17px 20px;
+  margin: 0px;
+}
+
+@media (max-width: 618px) {
+  .header ul li {
+   
+  }
+}
+
+@media (max-width: 487px) {
+  .footer p, nav, .nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+    float: none;
+  }
+
+  .footer nav {
+  	width: 100%;
+  	float: none;
+  }
+
+  .footer .nav li {
+    display: inline-block;
+    text-align: center;
+    float: none;
+}

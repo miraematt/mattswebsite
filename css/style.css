@@ -1,0 +1,324 @@
+html, body {
+	font-family: 'Raleway', sans-serif;
+  background: #dfe7ff;
+}
+
+h1, nav {
+	font-family: 'Open Sans Condensed', sans-serif;	
+	line-height: 60px;
+  color: #072154;
+  width: 50%;
+}
+
+nav {
+  font-size: 20px;
+  float: right;
+}
+
+.nav li {
+  line-height: 80px;
+}
+
+.nav li a {
+  color: #ff0000;
+}
+
+.nav li a:hover {
+  color: #072154;
+  background: #dfe7ff;
+}
+
+#bootstrap-override .nav li a:visited {
+  background: #dfe7ff;
+}
+
+.dropdown-menu {
+  background: #dfe7ff;
+  border-radius: 0;
+  margin-top: 0;
+  border: none;
+  box-shadow: none;
+  max-width: 100px ;
+  min-width: 0;
+  padding: 0;
+  }
+
+.nav li .dropdown-menu {
+  line-height: 1.42857143;
+}
+
+.dropdown-menu li a {
+  padding: 0 12px;
+}
+
+#bootstrap-override .dropdown-menu li a:hover {
+  background: #072154;
+  color: #fff;
+}
+
+header h1 {
+	font-style: italic;
+	font-size: 60px;
+	font-weight: 300;
+  display: inline-block;
+}
+
+section.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectsheader {
+  min-height: 187px;
+}
+
+.fadein {
+  display: none;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background-image: url("../img/Myeongjiview.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  color: #072154;
+  font-weight: 700;
+  margin: 50px 35px 50px 35px;
+  border-bottom: 2px solid #ff0000;
+  position: relative;
+}
+
+#intro {
+  display: none;
+}
+
+.jumbotron p {
+  color: #FFFFFF;
+  visibility: hidden;
+}
+
+.jumbotron .row {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ffffff;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+
+figure img:hover {
+  border: 2px solid #f00;
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+}
+
+figure {
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.projects {
+  margin: 50px;
+  bottom: 0;
+  color: #ffffff;
+}
+
+section {
+  background: #072154;
+  padding: -50;
+}
+
+#bootstrap-override section {
+  width: 100% ;
+  max-width: none;
+}
+
+section p {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn {
+  color: #ff0000;
+  padding: 15px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: #dfe7ff;
+  margin: 30px auto 50px auto;
+  font-weight: 700px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  width: 200px;
+}
+
+.btn:hover {
+  border: 2px solid #ff0000;
+  color: #072154;
+  background: #dfe7ff;
+}
+
+footer {
+  margin: 20px 0 10px 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #072154;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+footer  ul {
+  margin: 0 0 0 auto;
+  position: relative;
+}
+
+/*pop up*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  text-align: center;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 40px auto;
+  padding: 10px;
+  background: #dfe7ff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  width: 170px;
+  padding: 0;
+  margin: 10px auto;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+}
+
+.popup p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.popup ul {
+  text-align: center;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.popup li {
+  list-style: none;
+  line-height: 40px;
+}
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px){
+  .popup{
+    width: 70%;
+  }
+}
+
+@media (max-width:650px) {
+  header h1 {
+    display: block;
+  }
+
+  header h1, .nav, nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+    
+  }
+
+  .popup ul {
+    line-height: 30px;
+  }
+
+  header .nav li {
+    display: inline-block;
+    float: none;
+  }
+
+  header .nav li .dropdown-menu li {
+    display: block;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  footer .row {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  footer .col-sm-4 {
+    text-align: center;
+    padding: 0;
+  }
+
+}
